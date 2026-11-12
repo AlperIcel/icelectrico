@@ -3,9 +3,70 @@
   "folge": "f003-openmausbot",
   "wort": "MAUS",
   "tool": "OpenMausBot",
-  "info": "Your Own Team Of AI Bots, Open Source",
-  "hinweis": "You connect your own AI account, so provider fees still apply.",
   "link": "https://github.com/milind-soni/OpenMausBot",
-  "datum": "2026-11-12"
+  "datum": "2026-11-12",
+  "bilder": [
+   "bild1.jpg",
+   "bild2.jpg",
+   "bild3.jpg",
+   "bild4.jpg"
+  ],
+  "seite": {
+   "thema": "Agents",
+   "untertitel": "Run your own team of AI bots from a free, open source chat app.",
+   "was_es_ist": "OpenMausBot (also called MausBot) is an open source alternative to Grok Bot. It gives you a team of AI bots in a chat app on your own computer. It is made by Milind Soni and contributors, and it is licensed under Apache 2.0.",
+   "kann": [
+    "Give each bot a job, a model and its own computer",
+    "Switch a bot's model mid-conversation",
+    "Ask for your approval before bots act",
+    "Connect apps like Gmail, Slack, GitHub and Notion",
+    "Run work on a schedule or by webhook",
+    "Run bots on your own machine with local data"
+   ],
+   "anwendungen": [
+    {
+     "titel": "Daily planning helper",
+     "text": "You could create a bot that helps plan your day or drafts an email. You review the result before anything is sent."
+    },
+    {
+     "titel": "Support inbox triage",
+     "text": "You could connect Gmail and set up a bot to sort incoming messages. It asks for your approval before it acts."
+    },
+    {
+     "titel": "Bug fixing helper",
+     "text": "You could connect GitHub and give a bot the job of working on bugs. You allow or deny each step."
+    },
+    {
+     "titel": "Scheduled competitor watch",
+     "text": "You could set a bot to run on a schedule and keep an eye on competitors. You choose which model it uses."
+    }
+   ],
+   "start": [
+    "Download the desktop app for your computer from the official site",
+    "Install and open the app",
+    "Connect one provider, such as Claude Code or Codex",
+    "Create your first bot: pick a name, engine and model",
+    "Send a small task and review the result"
+   ],
+   "kosten": "The app is free and open source, but you need your own AI account or API key, and that provider's fees and limits apply. Optional cloud plans start at $15/month.",
+   "anbieter": {
+    "name": "Milind Soni and OpenMausBot contributors",
+    "url": "https://github.com/milind-soni/OpenMausBot"
+   },
+   "links": [
+    {
+     "titel": "Official website",
+     "url": "https://www.mausbot.com/"
+    },
+    {
+     "titel": "GitHub repository",
+     "url": "https://github.com/milind-soni/OpenMausBot"
+    }
+   ],
+   "quellen": [
+    "https://github.com/milind-soni/OpenMausBot",
+    "https://www.mausbot.com/"
+   ]
+  }
  }
 ]
