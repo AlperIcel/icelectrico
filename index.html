@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tools from my reels – @icelectrico</title>
+<meta name="description" content="Every AI tool from the @icelectrico reels with its official link, newest on top.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #070B12;
+    --flaeche: #0F1724;
+    --linie: #1C2738;
+    --text: #E8EEF6;
+    --leise: #8A98AD;
+    --akzent: #5CC8FF;
+    --sans: Inter, system-ui, sans-serif;
+    --serif: Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 400 16px/1.5 var(--sans); }
+  main { max-width: 640px; margin: 0 auto; padding: 40px 16px 56px; }
+  .konto { color: var(--leise); font-size: 15px; margin: 0 0 10px; }
+  .konto a { color: var(--leise); }
+  h1 { font-size: clamp(30px, 8vw, 40px); line-height: 1.1; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 12px; }
+  .unterzeile { color: var(--leise); margin: 0 0 28px; max-width: 34em; }
+  label { display: block; font-weight: 600; font-size: 15px; margin-bottom: 8px; }
+  input {
+    width: 100%; font: 400 18px/1.3 var(--sans); color: var(--text);
+    background: var(--flaeche); border: 1px solid var(--linie); border-radius: 10px; padding: 14px 16px;
+  }
+  input::placeholder { color: #5D6B80; }
+  input:focus-visible, a:focus-visible { outline: 3px solid var(--akzent); outline-offset: 2px; }
+  ol { list-style: none; margin: 28px 0 0; padding: 0; }
+  li + li { margin-top: 12px; }
+  .tool {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; align-items: start;
+    text-decoration: none; color: inherit; background: var(--flaeche);
+    border: 1px solid var(--linie); border-radius: 14px; padding: 18px 18px 16px;
+    transition: border-color .15s ease;
+  }
+  .tool:hover { border-color: #2E4260; }
+  .wort { font-family: var(--serif); font-size: 30px; line-height: 1.1; color: var(--akzent); overflow-wrap: anywhere; }
+  .datum { color: var(--leise); font-size: 13px; padding-top: 6px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .name { grid-column: 1 / -1; font-weight: 600; font-size: 18px; margin-top: 6px; }
+  .info { grid-column: 1 / -1; color: #C3CEDC; margin: 0; }
+  .hinweis { grid-column: 1 / -1; color: var(--leise); font-size: 14px; margin: 4px 0 0; }
+  .oeffnen { grid-column: 1 / -1; margin-top: 10px; font-weight: 600; color: var(--akzent); font-size: 15px; overflow-wrap: anywhere; }
+  .leer { color: var(--leise); margin-top: 24px; }
+  footer { margin-top: 40px; color: var(--leise); font-size: 14px; }
+  footer a { color: var(--text); }
+  @media (prefers-reduced-motion: reduce) { .tool { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <p class="konto"><a href="https://www.instagram.com/icelectrico/">@icelectrico</a></p>
+  <h1>Every tool from my reels</h1>
+  <p class="unterzeile">Type the word from the reel you commented on, then tap the tool. Newest reels are on top.</p>
+  <label for="suche">The word from the reel</label>
+  <input id="suche" type="search" placeholder="e.g. MAUS" autocomplete="off" autocapitalize="characters" spellcheck="false">
+  <ol id="liste">
+
+  </ol>
+  <p class="leer" id="leer" hidden>No tool with that word yet. Check the spelling or scroll the full list.</p>
+  <footer>
+    <p>Links go to the official project pages. Updated 12 Nov 2026.</p>
+  </footer>
+</main>
+<script>
+  const feld = document.getElementById('suche'), leer = document.getElementById('leer');
+  const eintraege = [...document.querySelectorAll('#liste li')];
+  const norm = s => s.toUpperCase().replace(/[^A-Z0-9]/g, '');
+  feld.addEventListener('input', () => {
+    const q = norm(feld.value);
+    let treffer = 0;
+    for (const li of eintraege) {
+      const ok = !q || li.dataset.suche.includes(q);
+      li.hidden = !ok; treffer += ok;
+    }
+    leer.hidden = treffer > 0;
+  });
+</script>
+</body>
+</html>
