@@ -1,1 +1,11 @@
-[]
+[
+ {
+  "folge": "f003-openmausbot",
+  "wort": "MAUS",
+  "tool": "OpenMausBot",
+  "info": "Your Own Team Of AI Bots, Open Source",
+  "hinweis": "You connect your own AI account, so provider fees still apply.",
+  "link": "https://github.com/milind-soni/OpenMausBot",
+  "datum": "2026-11-12"
+ }
+]
