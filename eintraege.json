@@ -1,5 +1,75 @@
 [
  {
+  "folge": "f004-poki",
+  "wort": "IPHONE",
+  "tool": "Poki",
+  "link": "https://github.com/JosssphZhou/poki",
+  "datum": "2026-11-13",
+  "bilder": [
+   "bild1.jpg",
+   "bild2.jpg",
+   "bild3.jpg",
+   "bild4.jpg"
+  ],
+  "seite": {
+   "thema": "Agents",
+   "untertitel": "An open source AI agent that can use your real iPhone for you.",
+   "was_es_ist": "Poki lets AI agents operate a real iPhone, the way a person would. It is an independent open source project by Joseph Zhou and contributors. The code is under the AGPL-3.0 license.",
+   "kann": [
+    "Operates a real iPhone, with no jailbreak and no extra hardware",
+    "Takes plain-language tasks, like searching in Chrome",
+    "Accepts tasks through iMessage or Telegram",
+    "Works as an MCP server for clients like Claude Code and Codex",
+    "Remembers past tasks and runs repeat tasks faster"
+   ],
+   "anwendungen": [
+    {
+     "titel": "Search and summarize",
+     "text": "You could ask Poki to search a topic in Chrome on your iPhone and summarize the top result."
+    },
+    {
+     "titel": "Tasks by message",
+     "text": "You could send Poki a request over iMessage and get a progress note back when it is done."
+    },
+    {
+     "titel": "Connect your coding agent",
+     "text": "You could connect Poki MCP to Claude Code or Codex so your agent can reach your iPhone."
+    },
+    {
+     "titel": "Repeat jobs faster",
+     "text": "You could run the same kind of task again and let Poki use what it remembered from earlier runs."
+    }
+   ],
+   "start": [
+    "Check you have a Mac, an iPhone, a USB data cable and an Apple Account",
+    "Get Poki from the GitHub repository (git clone, then run ./bin/setup)",
+    "Run npm start and keep it running",
+    "Connect your iPhone and tap Trust when asked",
+    "Sign in to your model account or add an API key, then send a task"
+   ],
+   "kosten": "Poki itself is open source and the page lists no price, but you need your own model account or API key (such as Anthropic, OpenAI or Gemini) and its fees.",
+   "anbieter": {
+    "name": "Joseph Zhou and contributors",
+    "url": "https://github.com/JosssphZhou/poki"
+   },
+   "links": [
+    {
+     "titel": "GitHub repository",
+     "url": "https://github.com/JosssphZhou/poki"
+    },
+    {
+     "titel": "Official website",
+     "url": "https://poki.bot"
+    }
+   ],
+   "quellen": [
+    "https://github.com/JosssphZhou/poki",
+    "https://poki.bot",
+    "https://api.github.com/repos/JosssphZhou/poki"
+   ]
+  }
+ },
+ {
   "folge": "f003-openmausbot",
   "wort": "MAUS",
   "tool": "OpenMausBot",

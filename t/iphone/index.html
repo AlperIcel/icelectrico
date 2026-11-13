@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poki – what it is and how to start | @icelectrico</title>
+<meta name="description" content="An open source AI agent that can use your real iPhone for you.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#070B12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #070B12; --flaeche: #0E1624; --linie: #1B283B; --text: #EAF0F8; --leise: #8494AB; --mittel: #B9C5D6;
+    --akzent: #5CC8FF; --sans: Inter, system-ui, sans-serif; --serif: Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; color: var(--text); font: 400 17px/1.6 var(--sans);
+    background: radial-gradient(120% 50% at 70% -10%, #0F2240 0%, var(--bg) 55%) fixed, var(--bg); }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 16px 72px; }
+  a { color: var(--akzent); }
+  a:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; border-radius: 4px; }
+  .zurueck { display: inline-block; color: var(--leise); text-decoration: none; font-weight: 500; font-size: 15px; margin-bottom: 26px; }
+  .zurueck:hover { color: var(--text); }
+  .chip { display: inline-block; font-size: 13px; font-weight: 600; color: var(--akzent); background: rgba(92, 200, 255, .12);
+    border: 1px solid rgba(92, 200, 255, .3); border-radius: 999px; padding: 3px 11px; }
+  .wort { font-family: var(--serif); color: var(--akzent); font-size: 16px; margin-left: 10px; }
+  h1 { font-size: clamp(36px, 10vw, 60px); line-height: 1; font-weight: 800; letter-spacing: -0.04em; margin: 16px 0 12px; overflow-wrap: anywhere; }
+  .untertitel { font-size: clamp(18px, 4.6vw, 22px); line-height: 1.4; color: var(--mittel); margin: 0 0 24px; max-width: 28em; }
+  .knoepfe { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+  .los { display: inline-block; font-weight: 600; color: #04121F; background: var(--akzent); border-radius: 12px; padding: 14px 20px; text-decoration: none; }
+  .los:hover { background: #8DDBFF; }
+  .von { color: var(--leise); font-size: 15px; }
+  .von a { color: var(--text); }
+  .titelbild { margin: 32px 0 8px; border-radius: 18px; overflow: hidden; border: 1px solid var(--linie);
+    box-shadow: 0 24px 70px -20px rgba(31, 107, 255, .45); max-height: 420px; }
+  .titelbild img { display: block; width: 100%; height: auto; }
+  section { margin-top: 52px; }
+  h2 { font-size: 24px; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 16px; }
+  p { margin: 0 0 12px; max-width: 36em; }
+  .kann { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .kann li { display: flex; gap: 12px; align-items: flex-start; }
+  .kann svg { flex: none; width: 22px; height: 22px; margin-top: 2px; color: var(--akzent); }
+  .ideen { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  @media (min-width: 620px) { .ideen { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } .ideen > :first-child { grid-row: span 2; } }
+  .idee { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 16px; padding: 18px; }
+  .idee h3 { font-size: 17px; margin: 0 0 6px; }
+  .idee p { color: var(--mittel); font-size: 16px; margin: 0; }
+  .schritte { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 14px; }
+  .schritte li { counter-increment: s; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; align-items: start; }
+  .schritte li::before { content: counter(s); display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
+    border: 1px solid rgba(92, 200, 255, .45); color: var(--akzent); font-weight: 600; font-size: 15px; font-variant-numeric: tabular-nums; }
+  .schritte li span { padding-top: 4px; }
+  .kosten { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 16px; padding: 18px 20px; color: var(--mittel); }
+  .kosten strong { color: var(--text); }
+  .galerie { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .galerie img { flex: none; width: 72%; max-width: 360px; border-radius: 14px; border: 1px solid var(--linie); scroll-snap-align: start; }
+  .links { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .links a { display: flex; justify-content: space-between; gap: 12px; padding: 14px 16px; border: 1px solid var(--linie); border-radius: 12px;
+    color: var(--text); text-decoration: none; background: var(--flaeche); }
+  .links a:hover { border-color: #2E4260; }
+  .links small { color: var(--leise); overflow-wrap: anywhere; text-align: right; }
+  .quellen { font-size: 14px; color: var(--leise); }
+  .quellen a { color: var(--leise); overflow-wrap: anywhere; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--linie); color: var(--leise); font-size: 14px; }
+  footer a { color: var(--text); }
+</style>
+</head>
+<body>
+<main>
+  <a class="zurueck" href="../../">&larr; All tools</a>
+  <div><span class="chip">Agents</span><span class="wort">IPHONE</span></div>
+  <h1>Poki</h1>
+  <p class="untertitel">An open source AI agent that can use your real iPhone for you.</p>
+  <div class="knoepfe">
+    <a class="los" href="https://github.com/JosssphZhou/poki" target="_blank" rel="noopener">Open Poki</a>
+    <span class="von">by <a href="https://github.com/JosssphZhou/poki" target="_blank" rel="noopener">Joseph Zhou and contributors</a></span>
+  </div>
+  <div class="titelbild"><img src="bild1.jpg" alt="Screenshot of Poki"></div>
+  <section><h2>What it is</h2><p>Poki lets AI agents operate a real iPhone, the way a person would. It is an independent open source project by Joseph Zhou and contributors. The code is under the AGPL-3.0 license.</p></section>
+  <section><h2>What it can do</h2><ul class="kann"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Operates a real iPhone, with no jailbreak and no extra hardware</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Takes plain-language tasks, like searching in Chrome</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Accepts tasks through iMessage or Telegram</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Works as an MCP server for clients like Claude Code and Codex</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Remembers past tasks and runs repeat tasks faster</span></li></ul></section>
+  <section><h2>What you could use it for</h2><div class="ideen"><div class="idee"><h3>Search and summarize</h3><p>You could ask Poki to search a topic in Chrome on your iPhone and summarize the top result.</p></div><div class="idee"><h3>Tasks by message</h3><p>You could send Poki a request over iMessage and get a progress note back when it is done.</p></div><div class="idee"><h3>Connect your coding agent</h3><p>You could connect Poki MCP to Claude Code or Codex so your agent can reach your iPhone.</p></div><div class="idee"><h3>Repeat jobs faster</h3><p>You could run the same kind of task again and let Poki use what it remembered from earlier runs.</p></div></div></section>
+  <section><h2>How to start</h2><ol class="schritte"><li><span>Check you have a Mac, an iPhone, a USB data cable and an Apple Account</span></li><li><span>Get Poki from the GitHub repository (git clone, then run ./bin/setup)</span></li><li><span>Run npm start and keep it running</span></li><li><span>Connect your iPhone and tap Trust when asked</span></li><li><span>Sign in to your model account or add an API key, then send a task</span></li></ol></section>
+  <section><h2>What it costs</h2><p class="kosten"><strong>Good to know:</strong> Poki itself is open source and the page lists no price, but you need your own model account or API key (such as Anthropic, OpenAI or Gemini) and its fees.</p></section>
+  <section><h2>A look inside</h2><div class="galerie"><img src="bild2.jpg" alt="Screenshot of Poki" loading="lazy"><img src="bild3.jpg" alt="Screenshot of Poki" loading="lazy"><img src="bild4.jpg" alt="Screenshot of Poki" loading="lazy"></div></section>
+  <section><h2>Official links</h2><ul class="links"><li><a href="https://github.com/JosssphZhou/poki" target="_blank" rel="noopener"><span>GitHub repository</span><small>github.com</small></a></li><li><a href="https://poki.bot" target="_blank" rel="noopener"><span>Official website</span><small>poki.bot</small></a></li></ul></section>
+  <section class="quellen"><h2>Sources</h2><p><a href="https://github.com/JosssphZhou/poki" rel="noopener">https://github.com/JosssphZhou/poki</a><br><a href="https://poki.bot" rel="noopener">https://poki.bot</a><br><a href="https://api.github.com/repos/JosssphZhou/poki" rel="noopener">https://api.github.com/repos/JosssphZhou/poki</a></p></section>
+  <section><h2>How this reel was made</h2><ul class="links"><li><a href="https://try.elevenlabs.io/6zgjetyel189" target="_blank" rel="noopener sponsored"><span>Voice: ElevenLabs</span><small>Partner link</small></a></li></ul><p class="quellen">Partner links: I may earn a commission if you sign up. It costs you nothing extra.</p></section>
+  <footer><p>Featured in the <a href="https://www.instagram.com/icelectrico/">@icelectrico</a> reel from 13 Nov 2026. Facts come from the official pages listed above.</p></footer>
+</main>
+</body>
+</html>
