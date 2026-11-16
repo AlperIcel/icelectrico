@@ -1,5 +1,70 @@
 [
  {
+  "folge": "f005-anthropic-agent-skills",
+  "wort": "SKILLS",
+  "tool": "Anthropic Agent Skills",
+  "link": "https://github.com/anthropics/skills",
+  "datum": "2026-11-16",
+  "bilder": [
+   "bild1.jpg",
+   "bild2.jpg",
+   "bild3.jpg",
+   "bild4.jpg"
+  ],
+  "seite": {
+   "thema": "Agents",
+   "untertitel": "Teach Claude a task once and let it repeat the task the same way.",
+   "was_es_ist": "Agent Skills are folders of instructions, scripts and resources that Claude loads dynamically to do specialized tasks better. Anthropic keeps a public repository with example skills. Many skills in the repo are open source under Apache 2.0.",
+   "kann": [
+    "Teach Claude specific tasks in a repeatable way",
+    "Bundle instructions, scripts and resources in one folder",
+    "Define each skill in a SKILL.md file",
+    "Examples from art and music to testing web apps",
+    "Install skills in Claude Code with plugin commands",
+    "Use pre-built skills and upload custom ones via the Claude API"
+   ],
+   "anwendungen": [
+    {
+     "titel": "Repeatable work tasks",
+     "text": "You could write a skill with your own instructions so Claude handles a recurring task the same way each time."
+    },
+    {
+     "titel": "Creative projects",
+     "text": "You could try the example skills for art, music and design as a starting point for your own ideas."
+    },
+    {
+     "titel": "Testing web apps",
+     "text": "You could use a testing-focused example skill to have Claude check a web app."
+    },
+    {
+     "titel": "Your own custom skill",
+     "text": "You could copy the template, write a SKILL.md with a name and description, and add your own instructions."
+    }
+   ],
+   "start": [
+    "Open the anthropics/skills repository on GitHub",
+    "In Claude Code, run /plugin marketplace add anthropics/skills",
+    "Install a set, e.g. /plugin install document-skills@anthropic-agent-skills",
+    "Or use the example skills on a paid Claude.ai plan, where they are already available",
+    "To build your own, copy the template and write a SKILL.md"
+   ],
+   "kosten": "The repo is free to view, but the sources only say the example skills are available on paid Claude.ai plans, so you need a Claude account; check the official site for current pricing.",
+   "anbieter": {
+    "name": "Anthropic",
+    "url": "https://github.com/anthropics"
+   },
+   "links": [
+    {
+     "titel": "GitHub repository",
+     "url": "https://github.com/anthropics/skills"
+    }
+   ],
+   "quellen": [
+    "https://github.com/anthropics/skills"
+   ]
+  }
+ },
+ {
   "folge": "f004-poki",
   "wort": "IPHONE",
   "tool": "Poki",
