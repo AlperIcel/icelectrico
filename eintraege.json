@@ -1,5 +1,78 @@
 [
  {
+  "folge": "f006-portrait-silent",
+  "wort": "SILENT",
+  "tool": "GPT Image 2.6 (OpenAI)",
+  "link": "https://replicate.com/openai/gpt-image-2.6-sunburst",
+  "datum": "2026-11-18",
+  "bilder": [
+   "bild1.jpg",
+   "bild2.jpg"
+  ],
+  "seite": {
+   "thema": "Images",
+   "untertitel": "Turn a photo of yourself into a new look with one text prompt.",
+   "was_es_ist": "GPT Image 2.6 Sunburst is an image model from OpenAI, hosted on Replicate. It makes images from a text prompt and edits images you pass in. OpenAI describes it as its image model for detailed work. The page does not say whether it is open source.",
+   "kann": [
+    "Generates images from a text prompt",
+    "Edits images you pass in",
+    "Accepts one or more reference images",
+    "Choose aspect ratio, e.g. 1:1 or 16:9",
+    "Choose quality level from low to max",
+    "Create up to 10 images per call"
+   ],
+   "anwendungen": [
+    {
+     "titel": "Era makeover portrait",
+     "text": "You could upload a photo of yourself and ask for a 1920s film star look, while telling the model to keep your face recognizable."
+    },
+    {
+     "titel": "Different image sizes",
+     "text": "You could pick an aspect ratio like 1:1 or 16:9 to fit the place where you want to share the picture."
+    },
+    {
+     "titel": "Compare several versions",
+     "text": "You could create up to 10 images in one call and pick the one you like best."
+    },
+    {
+     "titel": "Combine reference images",
+     "text": "You could pass in more than one reference image and ask the model to combine them into a new picture."
+    }
+   ],
+   "start": [
+    "Open an image model that edits photos (link below).",
+    "Upload your photo.",
+    "Paste this prompt: “Transform this photo into a black-and-white 1920s silent film star portrait: dramatic studio lighting, soft vignette, vintage film grain, a slicked-back period hairstyle and a dark tuxedo with a bow tie. Keep his face, dark hair and beard exactly recognizable, and add no text.”"
+   ],
+   "kosten": "Price depends on the quality setting and no flat per-image price is listed; you can also pass your own OpenAI key to pay OpenAI directly.",
+   "anbieter": {
+    "name": "OpenAI",
+    "url": "https://replicate.com/openai/gpt-image-2.6-sunburst"
+   },
+   "links": [
+    {
+     "titel": "Model page (Playground)",
+     "url": "https://replicate.com/openai/gpt-image-2.6-sunburst"
+    },
+    {
+     "titel": "API",
+     "url": "https://replicate.com/openai/gpt-image-2.6-sunburst/api"
+    },
+    {
+     "titel": "Examples",
+     "url": "https://replicate.com/openai/gpt-image-2.6-sunburst/examples"
+    },
+    {
+     "titel": "Readme",
+     "url": "https://replicate.com/openai/gpt-image-2.6-sunburst/readme"
+    }
+   ],
+   "quellen": [
+    "https://replicate.com/openai/gpt-image-2.6-sunburst"
+   ]
+  }
+ },
+ {
   "folge": "f005-anthropic-agent-skills",
   "wort": "SKILLS",
   "tool": "Anthropic Agent Skills",
