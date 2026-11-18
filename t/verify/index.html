@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HeyGen Avatar 6 – what it is and how to start | @icelectrico</title>
+<meta name="description" content="Your free 3-step guide to protecting your identity, plus how this AI clone was made.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#070B12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #070B12; --flaeche: #0E1624; --linie: #1B283B; --text: #EAF0F8; --leise: #8494AB; --mittel: #B9C5D6;
+    --akzent: #5CC8FF; --sans: Inter, system-ui, sans-serif; --serif: Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; color: var(--text); font: 400 17px/1.6 var(--sans);
+    background: radial-gradient(120% 50% at 70% -10%, #0F2240 0%, var(--bg) 55%) fixed, var(--bg); }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 16px 72px; }
+  a { color: var(--akzent); }
+  a:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; border-radius: 4px; }
+  .zurueck { display: inline-block; color: var(--leise); text-decoration: none; font-weight: 500; font-size: 15px; margin-bottom: 26px; }
+  .zurueck:hover { color: var(--text); }
+  .chip { display: inline-block; font-size: 13px; font-weight: 600; color: var(--akzent); background: rgba(92, 200, 255, .12);
+    border: 1px solid rgba(92, 200, 255, .3); border-radius: 999px; padding: 3px 11px; }
+  .wort { font-family: var(--serif); color: var(--akzent); font-size: 16px; margin-left: 10px; }
+  h1 { font-size: clamp(36px, 10vw, 60px); line-height: 1; font-weight: 800; letter-spacing: -0.04em; margin: 16px 0 12px; overflow-wrap: anywhere; }
+  .untertitel { font-size: clamp(18px, 4.6vw, 22px); line-height: 1.4; color: var(--mittel); margin: 0 0 24px; max-width: 28em; }
+  .knoepfe { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+  .los { display: inline-block; font-weight: 600; color: #04121F; background: var(--akzent); border-radius: 12px; padding: 14px 20px; text-decoration: none; }
+  .los:hover { background: #8DDBFF; }
+  .von { color: var(--leise); font-size: 15px; }
+  .von a { color: var(--text); }
+  .titelbild { margin: 32px 0 8px; border-radius: 18px; overflow: hidden; border: 1px solid var(--linie);
+    box-shadow: 0 24px 70px -20px rgba(31, 107, 255, .45); max-height: 420px; }
+  .titelbild img { display: block; width: 100%; height: auto; }
+  section { margin-top: 52px; }
+  h2 { font-size: 24px; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 16px; }
+  p { margin: 0 0 12px; max-width: 36em; }
+  .kann { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .kann li { display: flex; gap: 12px; align-items: flex-start; }
+  .kann svg { flex: none; width: 22px; height: 22px; margin-top: 2px; color: var(--akzent); }
+  .ideen { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  @media (min-width: 620px) { .ideen { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } .ideen > :first-child { grid-row: span 2; } }
+  .idee { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 16px; padding: 18px; }
+  .idee h3 { font-size: 17px; margin: 0 0 6px; }
+  .idee p { color: var(--mittel); font-size: 16px; margin: 0; }
+  .schritte { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 14px; }
+  .schritte li { counter-increment: s; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; align-items: start; }
+  .schritte li::before { content: counter(s); display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
+    border: 1px solid rgba(92, 200, 255, .45); color: var(--akzent); font-weight: 600; font-size: 15px; font-variant-numeric: tabular-nums; }
+  .schritte li span { padding-top: 4px; }
+  .kosten { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 16px; padding: 18px 20px; color: var(--mittel); }
+  .kosten strong { color: var(--text); }
+  .galerie { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .galerie img { flex: none; width: 72%; max-width: 360px; border-radius: 14px; border: 1px solid var(--linie); scroll-snap-align: start; }
+  .links { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .links a { display: flex; justify-content: space-between; gap: 12px; padding: 14px 16px; border: 1px solid var(--linie); border-radius: 12px;
+    color: var(--text); text-decoration: none; background: var(--flaeche); }
+  .links a:hover { border-color: #2E4260; }
+  .links small { color: var(--leise); overflow-wrap: anywhere; text-align: right; }
+  .quellen { font-size: 14px; color: var(--leise); }
+  .quellen a { color: var(--leise); overflow-wrap: anywhere; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--linie); color: var(--leise); font-size: 14px; }
+  footer a { color: var(--text); }
+</style>
+</head>
+<body>
+<main>
+  <a class="zurueck" href="../../">&larr; All tools</a>
+  <div><span class="chip">Video</span><span class="wort">VERIFY</span></div>
+  <h1>HeyGen Avatar 6</h1>
+  <p class="untertitel">Your free 3-step guide to protecting your identity, plus how this AI clone was made.</p>
+  <div class="knoepfe">
+    <a class="los" href="https://www.heygen.com/models/heygen-avatar-6" target="_blank" rel="noopener">Open HeyGen Avatar 6</a>
+    <span class="von">by <a href="https://www.heygen.com/" target="_blank" rel="noopener">HeyGen</a></span>
+  </div>
+  <div class="titelbild"><img src="bild1.jpg" alt="Screenshot of HeyGen Avatar 6"></div>
+  <section><h2>Your 3-step protection guide</h2><ol class="schritte"><li><span>Agree on a safe word. Pick a word with family and close colleagues that you never post anywhere. If a call, voice note or video asks for money, passwords or urgent help, ask for the word. A clone can copy your face and voice, but not a secret it never saw.</span></li><li><span>Check the source before you believe it. Who posted it first? Find the original account and the full video, run a reverse image search on a frame, and drop the file into the free Content Credentials checker (link below). Missing credentials prove nothing, but when they are there, they show where a file came from.</span></li><li><span>Protect and claim your identity. Turn on two-factor login, keep accounts private where you can, and search your own name now and then. If an account pretends to be you, report it right away (Instagram link below) and warn your followers in a story.</span></li></ol></section>
+  <section><h2>What it is</h2><p>The person in this reel was never filmed saying these words. It is HeyGen Avatar 6, an AI avatar model: you give it a photo and a short recording of yourself talking, and it turns any script into a video of &quot;you&quot; speaking it. Face, voice and lip movement are generated.</p></section>
+  <section><h2>What it can do</h2><ul class="kann"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Makes a talking video of you from one photo plus a short recording (HeyGen asks for at least 15 to 30 seconds).</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Picks up your voice from that recording, so the clone speaks with your voice.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Renders every frame in native 2K; you can export in 1080p or 2K.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>In HeyGen&#x27;s own test, people picked the avatar as the real recording 42.2% of the time (HeyGen&#x27;s research, not an independent test).</span></li></ul></section>
+  <section><h2>What it costs</h2><p class="kosten"><strong>Good to know:</strong> Your first Avatar 6 video is free, no credit card needed. After that it runs on credits; paid plans start at $29 a month (600 credits). Prices from heygen.com, 18 Nov 2026.</p></section>
+  <section><h2>A look inside</h2><div class="galerie"><img src="bild2.jpg" alt="Screenshot of HeyGen Avatar 6" loading="lazy"><img src="bild3.jpg" alt="Screenshot of HeyGen Avatar 6" loading="lazy"></div></section>
+  <section><h2>Official links</h2><ul class="links"><li><a href="https://www.heygen.com/models/heygen-avatar-6" target="_blank" rel="noopener"><span>HeyGen Avatar 6 (official page)</span><small>heygen.com</small></a></li><li><a href="https://contentcredentials.org/verify" target="_blank" rel="noopener"><span>Check a file for Content Credentials</span><small>contentcredentials.org</small></a></li><li><a href="https://help.instagram.com/446663175382270" target="_blank" rel="noopener"><span>Report an account pretending to be you (Instagram)</span><small>help.instagram.com</small></a></li><li><a href="https://www.heygen.com/pricing" target="_blank" rel="noopener"><span>HeyGen pricing</span><small>heygen.com</small></a></li></ul></section>
+  <section class="quellen"><h2>Sources</h2><p><a href="https://www.heygen.com/models/heygen-avatar-6" rel="noopener">https://www.heygen.com/models/heygen-avatar-6</a><br><a href="https://www.heygen.com/pricing" rel="noopener">https://www.heygen.com/pricing</a></p></section>
+  <section><h2>How this reel was made</h2><ul class="links"><li><a href="https://www.heygen.com/models/heygen-avatar-6" target="_blank" rel="noopener"><span>AI avatar and voice: HeyGen</span><small>heygen.com</small></a></li><li><a href="https://try.elevenlabs.io/6zgjetyel189" target="_blank" rel="noopener sponsored"><span>Café background sound: ElevenLabs</span><small>Partner link</small></a></li></ul><p class="quellen">Partner links: I may earn a commission if you sign up. It costs you nothing extra.</p></section>
+  <footer><p>Featured in the <a href="https://www.instagram.com/icelectrico/">@icelectrico</a> reel from 18 Nov 2026. Facts come from the official pages listed above.</p></footer>
+</main>
+</body>
+</html>

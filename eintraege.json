@@ -1,5 +1,73 @@
 [
  {
+  "folge": "f008-klon-verify",
+  "wort": "VERIFY",
+  "tool": "HeyGen Avatar 6",
+  "link": "https://www.heygen.com/models/heygen-avatar-6",
+  "datum": "2026-11-18",
+  "bilder": [
+   "bild1.jpg",
+   "bild2.jpg",
+   "bild3.jpg"
+  ],
+  "seite": {
+   "thema": "Video",
+   "untertitel": "Your free 3-step guide to protecting your identity, plus how this AI clone was made.",
+   "start_titel": "Your 3-step protection guide",
+   "start": [
+    "Agree on a safe word. Pick a word with family and close colleagues that you never post anywhere. If a call, voice note or video asks for money, passwords or urgent help, ask for the word. A clone can copy your face and voice, but not a secret it never saw.",
+    "Check the source before you believe it. Who posted it first? Find the original account and the full video, run a reverse image search on a frame, and drop the file into the free Content Credentials checker (link below). Missing credentials prove nothing, but when they are there, they show where a file came from.",
+    "Protect and claim your identity. Turn on two-factor login, keep accounts private where you can, and search your own name now and then. If an account pretends to be you, report it right away (Instagram link below) and warn your followers in a story."
+   ],
+   "was_es_ist": "The person in this reel was never filmed saying these words. It is HeyGen Avatar 6, an AI avatar model: you give it a photo and a short recording of yourself talking, and it turns any script into a video of \"you\" speaking it. Face, voice and lip movement are generated.",
+   "kann": [
+    "Makes a talking video of you from one photo plus a short recording (HeyGen asks for at least 15 to 30 seconds).",
+    "Picks up your voice from that recording, so the clone speaks with your voice.",
+    "Renders every frame in native 2K; you can export in 1080p or 2K.",
+    "In HeyGen's own test, people picked the avatar as the real recording 42.2% of the time (HeyGen's research, not an independent test)."
+   ],
+   "anwendungen": [],
+   "kosten": "Your first Avatar 6 video is free, no credit card needed. After that it runs on credits; paid plans start at $29 a month (600 credits). Prices from heygen.com, 18 Nov 2026.",
+   "anbieter": {
+    "name": "HeyGen",
+    "url": "https://www.heygen.com/"
+   },
+   "links": [
+    {
+     "titel": "HeyGen Avatar 6 (official page)",
+     "url": "https://www.heygen.com/models/heygen-avatar-6"
+    },
+    {
+     "titel": "Check a file for Content Credentials",
+     "url": "https://contentcredentials.org/verify"
+    },
+    {
+     "titel": "Report an account pretending to be you (Instagram)",
+     "url": "https://help.instagram.com/446663175382270"
+    },
+    {
+     "titel": "HeyGen pricing",
+     "url": "https://www.heygen.com/pricing"
+    }
+   ],
+   "quellen": [
+    "https://www.heygen.com/models/heygen-avatar-6",
+    "https://www.heygen.com/pricing"
+   ],
+   "gemacht_mit": [
+    {
+     "name": "HeyGen",
+     "rolle": "AI avatar and voice",
+     "url": "https://www.heygen.com/models/heygen-avatar-6"
+    },
+    {
+     "name": "ElevenLabs",
+     "rolle": "Café background sound"
+    }
+   ]
+  }
+ },
+ {
   "folge": "f007-restore-restore",
   "wort": "RESTORE",
   "tool": "Higgsfield (Marketing Studio Image 2.5 Sunburst)",
