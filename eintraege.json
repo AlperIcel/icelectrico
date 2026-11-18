@@ -1,5 +1,74 @@
 [
  {
+  "folge": "f007-restore-restore",
+  "wort": "RESTORE",
+  "tool": "Higgsfield (Marketing Studio Image 2.5 Sunburst)",
+  "link": "https://higgsfield.ai",
+  "datum": "2026-11-18",
+  "bilder": [
+   "bild1.jpg",
+   "bild2.jpg"
+  ],
+  "seite": {
+   "thema": "Images",
+   "untertitel": "Edit and restore photos with a text prompt using Higgsfield's Sunburst image model.",
+   "was_es_ist": "Marketing Studio Image 2.5 Sunburst is an image model from Higgsfield. It creates images from a text prompt or edits images you provide. It is offered through the Higgsfield API, and the docs do not say whether it is open source.",
+   "kann": [
+    "Create images from a text prompt",
+    "Edit images from up to 16 public image URLs",
+    "Output in 1k, 2k or 4k resolution",
+    "Choose from nine aspect ratios, such as 1:1 or 16:9",
+    "Set quality from low to max",
+    "Use marketing presets with prompt enhancement"
+   ],
+   "anwendungen": [
+    {
+     "titel": "Restore an old family photo",
+     "text": "You could give the model a link to a scanned old photo. Then ask it in the prompt to remove cracks and stains and sharpen the details."
+    },
+    {
+     "titel": "Edit a picture with a prompt",
+     "text": "You could supply an image URL and describe the change you want in plain text."
+    },
+    {
+     "titel": "Make a wide banner image",
+     "text": "You could create an image with a 16:9 or 21:9 aspect ratio from a text description."
+    },
+    {
+     "titel": "Create a high-resolution image",
+     "text": "You could set the resolution to 4k and the quality to high for a detailed result."
+    }
+   ],
+   "start": [
+    "Open an image model that edits photos (link below).",
+    "Upload your photo.",
+    "Paste this prompt: “Restore this old damaged photograph: remove the cracks, stains and fading, repair the missing areas, and sharpen the soldier's face and uniform while keeping his exact face, pose and clothing. Keep it a natural 19th-century portrait with clean tonal contrast and soft studio light, and add no text.”"
+   ],
+   "kosten": "Check the official site for current pricing. You need a Higgsfield API key to use the model.",
+   "anbieter": {
+    "name": "Higgsfield",
+    "url": "https://higgsfield.ai"
+   },
+   "links": [
+    {
+     "titel": "Sunburst model docs",
+     "url": "https://docs.higgsfield.ai/docs/models/marketing-studio-image/sunburst.md"
+    },
+    {
+     "titel": "Authentication docs",
+     "url": "https://docs.higgsfield.ai/docs/authentication.md"
+    },
+    {
+     "titel": "Official website",
+     "url": "https://higgsfield.ai"
+    }
+   ],
+   "quellen": [
+    "https://docs.higgsfield.ai/docs/models/marketing-studio-image/sunburst.md"
+   ]
+  }
+ },
+ {
   "folge": "f006-portrait-silent",
   "wort": "SILENT",
   "tool": "GPT Image 2.6 Sunburst (OpenAI)",
