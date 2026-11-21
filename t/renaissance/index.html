@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Higgsfield (Marketing Studio Image 2.5 Sunburst) – what it is and how to start | @icelectrico</title>
+<meta name="description" content="Turn a photo into a new image with a text prompt using Higgsfield&#x27;s Sunburst model.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#070B12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #070B12; --flaeche: #0E1624; --linie: #1B283B; --text: #EAF0F8; --leise: #8494AB; --mittel: #B9C5D6;
+    --akzent: #5CC8FF; --sans: Inter, system-ui, sans-serif; --serif: Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; color: var(--text); font: 400 17px/1.6 var(--sans);
+    background: radial-gradient(120% 50% at 70% -10%, #0F2240 0%, var(--bg) 55%) fixed, var(--bg); }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 16px 72px; }
+  a { color: var(--akzent); }
+  a:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; border-radius: 4px; }
+  .zurueck { display: inline-block; color: var(--leise); text-decoration: none; font-weight: 500; font-size: 15px; margin-bottom: 26px; }
+  .zurueck:hover { color: var(--text); }
+  .chip { display: inline-block; font-size: 13px; font-weight: 600; color: var(--akzent); background: rgba(92, 200, 255, .12);
+    border: 1px solid rgba(92, 200, 255, .3); border-radius: 999px; padding: 3px 11px; }
+  .wort { font-family: var(--serif); color: var(--akzent); font-size: 16px; margin-left: 10px; }
+  h1 { font-size: clamp(36px, 10vw, 60px); line-height: 1; font-weight: 800; letter-spacing: -0.04em; margin: 16px 0 12px; overflow-wrap: anywhere; }
+  .untertitel { font-size: clamp(18px, 4.6vw, 22px); line-height: 1.4; color: var(--mittel); margin: 0 0 24px; max-width: 28em; }
+  .knoepfe { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+  .los { display: inline-block; font-weight: 600; color: #04121F; background: var(--akzent); border-radius: 12px; padding: 14px 20px; text-decoration: none; }
+  .los:hover { background: #8DDBFF; }
+  .von { color: var(--leise); font-size: 15px; }
+  .von a { color: var(--text); }
+  .titelbild { margin: 32px 0 8px; border-radius: 18px; overflow: hidden; border: 1px solid var(--linie);
+    box-shadow: 0 24px 70px -20px rgba(31, 107, 255, .45); max-height: 420px; }
+  .titelbild img { display: block; width: 100%; height: auto; }
+  section { margin-top: 52px; }
+  h2 { font-size: 24px; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 16px; }
+  p { margin: 0 0 12px; max-width: 36em; }
+  .kann { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .kann li { display: flex; gap: 12px; align-items: flex-start; }
+  .kann svg { flex: none; width: 22px; height: 22px; margin-top: 2px; color: var(--akzent); }
+  .ideen { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  @media (min-width: 620px) { .ideen { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } .ideen > :first-child { grid-row: span 2; } }
+  .idee { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 16px; padding: 18px; }
+  .idee h3 { font-size: 17px; margin: 0 0 6px; }
+  .idee p { color: var(--mittel); font-size: 16px; margin: 0; }
+  .schritte { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 14px; }
+  .schritte li { counter-increment: s; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; align-items: start; }
+  .schritte li::before { content: counter(s); display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
+    border: 1px solid rgba(92, 200, 255, .45); color: var(--akzent); font-weight: 600; font-size: 15px; font-variant-numeric: tabular-nums; }
+  .schritte li span { padding-top: 4px; }
+  .kosten { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 16px; padding: 18px 20px; color: var(--mittel); }
+  .kosten strong { color: var(--text); }
+  .galerie { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .galerie img { flex: none; width: 72%; max-width: 360px; border-radius: 14px; border: 1px solid var(--linie); scroll-snap-align: start; }
+  .links { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .links a { display: flex; justify-content: space-between; gap: 12px; padding: 14px 16px; border: 1px solid var(--linie); border-radius: 12px;
+    color: var(--text); text-decoration: none; background: var(--flaeche); }
+  .links a:hover { border-color: #2E4260; }
+  .links small { color: var(--leise); overflow-wrap: anywhere; text-align: right; }
+  .quellen { font-size: 14px; color: var(--leise); }
+  .quellen a { color: var(--leise); overflow-wrap: anywhere; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--linie); color: var(--leise); font-size: 14px; }
+  footer a { color: var(--text); }
+</style>
+</head>
+<body>
+<main>
+  <a class="zurueck" href="../../">&larr; All tools</a>
+  <div><span class="chip">Images</span><span class="wort">RENAISSANCE</span></div>
+  <h1>Higgsfield (Marketing Studio Image 2.5 Sunburst)</h1>
+  <p class="untertitel">Turn a photo into a new image with a text prompt using Higgsfield&#x27;s Sunburst model.</p>
+  <div class="knoepfe">
+    <a class="los" href="https://higgsfield.ai?fpr=alper-cda161" target="_blank" rel="noopener">Open Higgsfield (Marketing Studio Image 2.5 Sunburst)</a>
+    <span class="von">by <a href="https://docs.higgsfield.ai/docs/models/marketing-studio-image/sunburst.md" target="_blank" rel="noopener">Higgsfield</a></span><span class="von">Partner link: I may earn a commission if you sign up. It costs you nothing extra.</span>
+  </div>
+  <div class="titelbild"><img src="bild1.jpg" alt="Screenshot of Higgsfield (Marketing Studio Image 2.5 Sunburst)"></div>
+  <section><h2>What it is</h2><p>Sunburst is an image model from Higgsfield, used through the Higgsfield API. It is made for marketing visuals. It can create images from text and edit images from reference photos. The docs do not say whether it is open source.</p></section>
+  <section><h2>What it can do</h2><ul class="kann"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Create images from a text prompt</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Edit images using up to 16 reference image URLs</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Accepts JPEG, PNG or WebP reference images</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Output resolution of 1k, 2k or 4k</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Aspect ratios such as 1:1, 9:16 and 21:9</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Optional prompt enhancement with a Marketing Studio preset</span></li></ul></section>
+  <section><h2>What you could use it for</h2><div class="ideen"><div class="idee"><h3>Selfie as a painting</h3><p>You could upload a selfie as a reference image and describe a painted look in the prompt, such as dark robes and soft window light.</p></div><div class="idee"><h3>Vertical images for stories</h3><p>You could pick the 9:16 aspect ratio to get an image shaped for a phone screen.</p></div><div class="idee"><h3>Product visuals</h3><p>You could add a product photo as the first image and use a preset to enhance the prompt for a marketing picture.</p></div><div class="idee"><h3>Images from text only</h3><p>You could skip the reference images and just describe a scene in up to 5,000 characters.</p></div></div></section>
+  <section><h2>How to start</h2><ol class="schritte"><li><span>Open an image model that edits photos (link below).</span></li><li><span>Upload your photo.</span></li><li><span>Paste this prompt: “Transform this photo into a Renaissance oil painting portrait of the same man: keep his face, dark hair and beard exactly recognizable, dress him in dark velvet robes with a white collar, and paint him against a dark moody background. Use soft chiaroscuro window light, visible brushstrokes and the cracked varnish texture of an old master canvas.”</span></li></ol></section>
+  <section><h2>What it costs</h2><p class="kosten"><strong>Good to know:</strong> The docs page does not list prices, so check the official site for current pricing. You need a Higgsfield API key.</p></section>
+  <section><h2>A look inside</h2><div class="galerie"><img src="bild2.jpg" alt="Screenshot of Higgsfield (Marketing Studio Image 2.5 Sunburst)" loading="lazy"></div></section>
+  <section><h2>Official links</h2><ul class="links"><li><a href="https://docs.higgsfield.ai/docs/models/marketing-studio-image/sunburst.md" target="_blank" rel="noopener"><span>Sunburst docs</span><small>docs.higgsfield.ai</small></a></li><li><a href="https://docs.higgsfield.ai/docs/models/marketing-studio-image.md" target="_blank" rel="noopener"><span>Marketing Studio Image overview</span><small>docs.higgsfield.ai</small></a></li><li><a href="https://docs.higgsfield.ai/docs/authentication.md" target="_blank" rel="noopener"><span>Authentication docs</span><small>docs.higgsfield.ai</small></a></li></ul></section>
+  <section class="quellen"><h2>Sources</h2><p><a href="https://docs.higgsfield.ai/docs/models/marketing-studio-image/sunburst.md" rel="noopener">https://docs.higgsfield.ai/docs/models/marketing-studio-image/sunburst.md</a></p></section>
+  <section><h2>How this reel was made</h2><ul class="links"><li><a href="https://try.elevenlabs.io/6zgjetyel189" target="_blank" rel="noopener sponsored"><span>Voice: ElevenLabs</span><small>Partner link</small></a></li></ul><p class="quellen">Partner links: I may earn a commission if you sign up. It costs you nothing extra.</p></section>
+  <footer><p>Featured in the <a href="https://www.instagram.com/icelectrico/">@icelectrico</a> reel from 21 Nov 2026. Facts come from the official pages listed above.</p></footer>
+</main>
+</body>
+</html>

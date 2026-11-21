@@ -1,5 +1,74 @@
 [
  {
+  "folge": "f011-portrait-renaissance",
+  "wort": "RENAISSANCE",
+  "tool": "Higgsfield (Marketing Studio Image 2.5 Sunburst)",
+  "link": "https://docs.higgsfield.ai/docs/models/marketing-studio-image/sunburst.md",
+  "datum": "2026-11-21",
+  "bilder": [
+   "bild1.jpg",
+   "bild2.jpg"
+  ],
+  "seite": {
+   "thema": "Images",
+   "untertitel": "Turn a photo into a new image with a text prompt using Higgsfield's Sunburst model.",
+   "was_es_ist": "Sunburst is an image model from Higgsfield, used through the Higgsfield API. It is made for marketing visuals. It can create images from text and edit images from reference photos. The docs do not say whether it is open source.",
+   "kann": [
+    "Create images from a text prompt",
+    "Edit images using up to 16 reference image URLs",
+    "Accepts JPEG, PNG or WebP reference images",
+    "Output resolution of 1k, 2k or 4k",
+    "Aspect ratios such as 1:1, 9:16 and 21:9",
+    "Optional prompt enhancement with a Marketing Studio preset"
+   ],
+   "anwendungen": [
+    {
+     "titel": "Selfie as a painting",
+     "text": "You could upload a selfie as a reference image and describe a painted look in the prompt, such as dark robes and soft window light."
+    },
+    {
+     "titel": "Vertical images for stories",
+     "text": "You could pick the 9:16 aspect ratio to get an image shaped for a phone screen."
+    },
+    {
+     "titel": "Product visuals",
+     "text": "You could add a product photo as the first image and use a preset to enhance the prompt for a marketing picture."
+    },
+    {
+     "titel": "Images from text only",
+     "text": "You could skip the reference images and just describe a scene in up to 5,000 characters."
+    }
+   ],
+   "start": [
+    "Open an image model that edits photos (link below).",
+    "Upload your photo.",
+    "Paste this prompt: “Transform this photo into a Renaissance oil painting portrait of the same man: keep his face, dark hair and beard exactly recognizable, dress him in dark velvet robes with a white collar, and paint him against a dark moody background. Use soft chiaroscuro window light, visible brushstrokes and the cracked varnish texture of an old master canvas.”"
+   ],
+   "kosten": "The docs page does not list prices, so check the official site for current pricing. You need a Higgsfield API key.",
+   "anbieter": {
+    "name": "Higgsfield",
+    "url": "https://docs.higgsfield.ai/docs/models/marketing-studio-image/sunburst.md"
+   },
+   "links": [
+    {
+     "titel": "Sunburst docs",
+     "url": "https://docs.higgsfield.ai/docs/models/marketing-studio-image/sunburst.md"
+    },
+    {
+     "titel": "Marketing Studio Image overview",
+     "url": "https://docs.higgsfield.ai/docs/models/marketing-studio-image.md"
+    },
+    {
+     "titel": "Authentication docs",
+     "url": "https://docs.higgsfield.ai/docs/authentication.md"
+    }
+   ],
+   "quellen": [
+    "https://docs.higgsfield.ai/docs/models/marketing-studio-image/sunburst.md"
+   ]
+  }
+ },
+ {
   "folge": "f008-klon-verify",
   "wort": "VERIFY",
   "tool": "HeyGen Avatar 6",
